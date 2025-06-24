@@ -25,11 +25,34 @@
       margin: 20px auto;
       line-height: 1.6;
     }
+    .feed-button { /* Style for the new button */
+      background-color: #e6739f;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1.2em;
+      margin-top: 20px;
+    }
+    .feed-button:hover {
+      background-color: #d05b82;
+    }
   </style>
 </head>
 <body>
   <h1>Ben Venüs</h1>
   <img src="1.png" alt="Venüs">
   <p>YEMEEEEKKK!!!</p>
+  <button class="feed-button" onclick="playYumYum()">Besle</button>
+
+  <audio id="yumyumSound" src="yumyum.mp3" preload="auto"></audio>
+
+  <script>
+    function playYumYum() {
+      const audio = document.getElementById('yumyumSound');
+      audio.play();
+    }
+  </script>
 </body>
 </html>
