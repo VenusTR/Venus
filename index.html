@@ -10,6 +10,8 @@
       color: #333;
       text-align: center;
       padding: 50px;
+      position: relative; /* "By Egolent" yazısı için konumlandırma bağlamı */
+      min-height: 100vh; /* Sayfanın tüm yüksekliğini kaplaması için */
     }
     img {
       width: 300px;
@@ -25,7 +27,7 @@
       margin: 20px auto;
       line-height: 1.6;
     }
-    .feed-button { /* Style for the new button */
+    .feed-button { /* Yeni buton için stil */
       background-color: #e6739f;
       color: white;
       padding: 10px 20px;
@@ -37,6 +39,13 @@
     }
     .feed-button:hover {
       background-color: #d05b82;
+    }
+    .footer-text { /* "By Egolent" yazısı için yeni stil */
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      font-size: 0.8em;
+      color: #aaa;
     }
   </style>
 </head>
@@ -54,5 +63,7 @@
       audio.play();
     }
   </script>
+
+  <div class="footer-text">By Egolent</div>
 </body>
 </html>
